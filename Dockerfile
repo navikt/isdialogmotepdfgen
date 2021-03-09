@@ -1,4 +1,4 @@
-FROM navikt/pdfgen:f3fda1f27664f189e9cd3b44223da4867189947b
+FROM navikt/pdfgen:096d823096fb366a6a90dfeae4401d165dd7bbb6
 
 COPY templates /app/templates
 COPY fonts /app/fonts
