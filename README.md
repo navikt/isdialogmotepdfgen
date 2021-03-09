@@ -36,6 +36,9 @@ since the last GET, making this ideal for developing new templates for your appl
 The template and data directory structure both follow the `<application>/<template>` structure.
 Example url: `http://0.0.0.0:8080/api/v1/genpdf/isdialogmote/innkalling-arbeidstaker`
 
+### Automical deploy of feature branch
+All remotes branches with the prefix `d-` will be deployed automatically to `dev` if the build pipeline is successful.
+
 ### Notes on developing templates on Windows
 It is a known issue that pdfgen's output documents look different depending on whether the template
 has `\r\n` or `\n` as line endings. Therefore, it is strongly recommended to configure Git to not convert newlines, as well as ensure that your editor ends its lines with LF (`\n`) and not CRLF (`\r\n`), as the former will accurately show what your
