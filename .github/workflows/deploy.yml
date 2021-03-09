@@ -1,0 +1,24 @@
+name: manual-deploy
+
+on:
+  workflow_dispatch:
+    inputs:
+      dockerImage:
+        description: 'Docker version'
+        required: true
+        default: ''
+
+env:
+  IMAGE: docker.pkg.github.com/${{ github.repository }}/isdialogmotepdfgen:${{ github.event.inputs.dockerImage }}
+
+jobs:
+  deploy-dev:
+    name: Deploy to NAIS dev-gcp
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: nais/deploy/actions/deploy@v1
+        env:
+          APIKEY: ${{ secrets.NAIS_DEPLOY_APIKEY }}
+          CLUSTER: dev-gcp
+          RESOURCE: .nais/naiserator-dev-gcp.yaml
