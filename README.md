@@ -34,7 +34,7 @@ a PDF to your browser. Additionally, the template folder will be fetched on ever
 since the last GET, making this ideal for developing new templates for your application.
 
 The template and data directory structure both follow the `<application>/<template>` structure.
-Example url: `http://0.0.0.0:8080/api/v1/genpdf/isdialogmote/innkalling`
+Example url: `http://0.0.0.0:8080/api/v1/genpdf/isdialogmote/innkalling-arbeidstaker`
 
 ### Notes on developing templates on Windows
 It is a known issue that pdfgen's output documents look different depending on whether the template
