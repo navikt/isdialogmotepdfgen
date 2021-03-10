@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       gitCommit:
-        description: 'Git commit to deploy'
+        description: 'Complete git commit to deploy'
         required: true
         default: ''
 
