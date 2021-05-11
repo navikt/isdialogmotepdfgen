@@ -1,7 +1,50 @@
-{
-  "innkalling": {
-      "tidOgSted": {
-      "sted": "Innkallingsgata 4"
-    }
+[{
+    "type": "PARAGRAPH",
+    "title": "Møtetidspunkt",
+    "text": "20. mai 2021, Storgata 4"
+  },
+  {
+    "type": "PARAGRAPH",
+    "title": "Møtested",
+    "text": "Videomøte på Teams"
+  },
+  {
+    "type": "LINK",
+    "title": "Lenke til videomøte",
+    "text": "https://teams.microsoft.com/l/osv.osv.osv"
+  },
+  {
+    "type": "PARAGRAPH",
+    "text": "Hei Artig Trane"
+  },
+  {
+    "type": "PARAGRAPH",
+    "text": "Velkommen til dialogmøte mellom deg, arbeidsgiveren din og en veileder fra NAV. I møtet skal vi snakke om situasjonen din og bli enige om en plan som kan hjelpe deg videre."
+  },
+  {
+    "type": "PARAGRAPH",
+    "text": "Her kommer en fritekst skrevet av veilederen."
+  },
+  {
+    "type": "PARAGRAPH",
+    "text": "Den som har sykmeldt deg, eller en annen behandler, kan også bli invitert til å delta i møtet. Til dette møtet har vi ikke sett behov for det."
+  },
+  {
+    "type": "PARAGRAPH",
+    "title": "Før møtet",
+    "text": "Det er viktig at dere fyller ut oppfølgingsplanen sammen og deler den med NAV. Det gir oss et godt utgangspunkt for å snakke om hva som fungerer, hva som har blitt forsøkt, og hvilke muligheter som finnes framover."
+  },
+  {
+    "type": "PARAGRAPH",
+    "text": "Med hilsen"
+  },
+  {
+    "type": "PARAGRAPH",
+    "text": "NAV Staden"
+  },
+  {
+    "type": "PARAGRAPH",
+    "text": "Kari Saksbehandler"
   }
-}
+]
+
