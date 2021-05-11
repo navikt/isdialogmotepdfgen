@@ -1,6 +1,17 @@
 [ {
-    "type": "HEADER",
-    "text": "Innkalling til dialogmøte: Nærmeste leder"
+    "type": "PARAGRAPH",
+    "title": "Møtetidspunkt",
+    "text": "20. mai 2021, Storgata 4"
+  },
+  {
+    "type": "PARAGRAPH",
+    "title": "Møtested",
+    "text": "Videomøte på Teams"
+  },
+  {
+    "type": "LINK",
+    "title": "Lenke til videomøte",
+    "text": "https://teams.microsoft.com/l/osv.osv.osv"
   },
   {
     "type": "PARAGRAPH",
@@ -17,21 +28,6 @@
   {
     "type": "PARAGRAPH",
     "text": "Vi gjør oppmerksom på at det er obligatorisk å delta i dialogmøter med NAV og sende inn oppfølgingsplan på forhånd. Oppdatert oppfølgingsplan skal sendes til NAV senest 1 uke før møtet avholdes."
-  },
-  {
-    "type": "PARAGRAPH",
-    "title": "Møtetidspunkt",
-    "text": "20. mai 2021, Storgata 4"
-  },
-  {
-    "type": "PARAGRAPH",
-    "title": "Møtested",
-    "text": "Videomøte på Teams"
-  },
-  {
-    "type": "LINK",
-    "title": "Lenke til videomøte",
-    "text": "https://teams.microsoft.com/l/osv.osv.osv"
   },
   {
     "type": "PARAGRAPH",
