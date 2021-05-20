@@ -1,7 +1,27 @@
-{
-  "avlysning": {
-    "tidOgSted": {
-      "sted": "Innkallingsgata 4"
-    }
+[
+  {
+    "type": "PARAGRAPH",
+    "text": "Hei Artig Trane"
+  },
+  {
+    "type": "PARAGRAPH",
+    "text": "NAV har tidligere innkalt til dialogmøte som skulle vært avholdt 22.10.2021 klokka 12. Dette møtet er avlyst."
+  },
+  {
+    "type": "PARAGRAPH",
+    "text": "Her kommer en fritekst skrevet av veilederen."
+  },
+  {
+    "type": "PARAGRAPH",
+    "text": "Med hilsen"
+  },
+  {
+    "type": "PARAGRAPH",
+    "text": "NAV Staden"
+  },
+  {
+    "type": "PARAGRAPH",
+    "text": "Kari Saksbehandler"
   }
-}
+]
+
