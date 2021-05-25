@@ -1,7 +1,38 @@
-{
-  "endring": {
-    "tidOgSted": {
-      "sted": "Innkallingsveien 4"
-    }
+[
+  {
+    "type": "PARAGRAPH",
+    "title": "Møtetidspunkt",
+    "text": "20. mai 2021, Storgata 4"
+  },
+  {
+    "type": "PARAGRAPH",
+    "title": "Møtested",
+    "text": "Videomøte på Teams"
+  },
+  {
+    "type": "LINK",
+    "title": "Lenke til videomøte",
+    "text": "https://teams.microsoft.com/l/osv.osv.osv"
+  },
+  {
+    "type": "PARAGRAPH",
+    "text": "Hei Artig Trane"
+  },
+  {
+    "type": "PARAGRAPH",
+    "text": "Tid og/eller sted for dialogmøtet har blitt endret."
+  },
+  {
+    "type": "PARAGRAPH",
+    "text": "Med hilsen"
+  },
+  {
+    "type": "PARAGRAPH",
+    "text": "NAV Staden"
+  },
+  {
+    "type": "PARAGRAPH",
+    "text": "Kari Saksbehandler"
   }
-}
+]
+
