@@ -75,15 +75,23 @@
     {{#if title }}
         <h3>{{ title }}</h3>
     {{/if}}
-    {{#if text }}
-        {{#eq type 'HEADER' }}
-            <h2>{{ text }}</h2>
-        {{else eq type 'LINK' }}
-            <a href="{{ text }}">{{ text }}</a>
-        {{else}} <!-- eq type PARAGRAPH-->
-            <p>{{ text }}</p>
-        {{/eq}}
-    {{/if}}
+    {{#eq type 'HEADER' }}
+        <h2>
+            {{#each texts }}
+                {{ this }}<br/>
+            {{/each}}
+        </h2>
+    {{else eq type 'LINK' }}
+        {{#each texts }}
+            <a href="{{ this }}">{{ this }}</a>
+        {{/each}}
+    {{else}} <!-- eq type PARAGRAPH -->
+        <p>
+            {{#each texts }}
+                {{ this }}<br/>
+            {{/each}}
+        </p>
+    {{/eq}}
 {{/each}}
 </body>
 </html>

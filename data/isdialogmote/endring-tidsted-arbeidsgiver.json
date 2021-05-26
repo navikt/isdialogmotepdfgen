@@ -2,45 +2,29 @@
   {
     "type": "PARAGRAPH",
     "title": "Møtetidspunkt",
-    "text": "20. mai 2021, Storgata 4"
+    "texts": ["20. mai 2021, Storgata 4"]
   },
   {
     "type": "PARAGRAPH",
     "title": "Møtested",
-    "text": "Videomøte på Teams"
+    "texts": ["Videomøte på Teams"]
   },
   {
     "type": "LINK",
     "title": "Lenke til videomøte",
-    "text": "https://teams.microsoft.com/l/osv.osv.osv"
+    "texts": ["https://teams.microsoft.com/l/osv.osv.osv"]
   },
   {
     "type": "PARAGRAPH",
-    "text": "Gjelder Artig Trane, f.nr. 12345678945"
+    "texts": ["Gjelder Artig Trane, f.nr. 12345678945"]
   },
   {
     "type": "PARAGRAPH",
-    "text": "Tid og/eller sted for dialogmøtet har blitt endret."
+    "texts": ["Tid og/eller sted for dialogmøtet har blitt endret."]
   },
   {
     "type": "PARAGRAPH",
-    "text": "Med hilsen"
-  },
-  {
-    "type": "PARAGRAPH",
-    "text": "NAV Staden"
-  },
-  {
-    "type": "PARAGRAPH",
-    "text": "Kari Saksbehandler"
-  },
-  {
-    "type": "PARAGRAPH",
-    "text": "kari@nav.no"
-  },
-  {
-    "type": "PARAGRAPH",
-    "text": "99998888"
+    "texts": ["Med hilsen", "NAV Staden", "Kari Saksbehandler", "kari@nav.no", "99998888"]
   }
 ]
 
