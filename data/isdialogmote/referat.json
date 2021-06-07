@@ -51,16 +51,19 @@
   },
   {
     "type": "PARAGRAPH",
+    "key": "AVKLARING_ARBEIDSEVNE",
     "title": "Avklaring om arbeidsevnen",
     "texts": ["Du kan få kartlagt eller prøvd ut arbeidsevnen din. Avklaringen kan skje der du jobber eller på en annen arbeidsplass. Da undersøker vi om du kan utføre jobben med noen tilpasninger, om du kan få påfyll av kompetanse, eller om det er muligheter i et annet yrke. Avklaringen varer som regel i fire uker, men kan forlenges inntil åtte uker ved behov."]
   },
   {
     "type": "PARAGRAPH",
+    "key": "FRISKMELDING_ARBEIDSFORMIDLING",
     "title": "Friskmelding til arbeidsformidling",
     "texts": ["Denne ordningen er aktuell dersom helsen din er slik at du kan komme tilbake i arbeid, men ikke til den jobben du er sykmeldt fra. Hvis alle muligheter for å komme tilbake til arbeidsplassen din er forsøkt, kan du få sykepenger i inntil 12 uker mens du søker ny jobb. Maksimal periode med sykepenger er 52 uker, inkludert ukene med friskmelding til arbeidsformidling."]
   },
   {
     "type": "PARAGRAPH",
+    "key": "OKONOMISK_STOTTE",
     "title": "Hjelp til å søke om annen økonomisk støtte",
     "texts": ["Klarer du ikke å komme tilbake i arbeid før den siste dagen du har rett til sykepenger, trenger vi et nytt dialogmøte. Da vil vi snakke sammen om hvordan du eventuelt kan søke om annen økonomisk støtte fra NAV."]
   },
