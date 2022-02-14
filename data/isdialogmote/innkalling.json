@@ -1,5 +1,9 @@
 [
   {
+    "type": "BREVTITLE",
+    "texts": ["Brev til arbeidstaker"]
+  },
+  {
     "type": "PARAGRAPH",
     "title": "Møtetidspunkt",
     "texts": ["20. mai 2021, Storgata 4"]

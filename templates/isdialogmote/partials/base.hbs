@@ -66,12 +66,30 @@
         .pageBreak {
             page-break-after: always;
         }
+
+        .centered {
+            text-align: center;
+            font-size: 40px;
+            line-height: 44px;
+        }
     </style>
     <title>{{ doctitle }}</title>
 </head>
 <body>
+
+{{#each items }}
+{{#eq type 'BREVTITLE' }}
+     <h1 class="centered">
+         {{#each texts }}
+             {{ this }}<br/>
+         {{/each}}
+     </h1>
+{{/eq}}
+{{/each}}
+
 <h1>{{ heading }}</h1>
 {{#each items }}
+
     {{#if title }}
         <h3>{{ title }}</h3>
     {{/if}}
