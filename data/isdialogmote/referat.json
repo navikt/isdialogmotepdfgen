@@ -1,6 +1,14 @@
 [
   {
-    "type": "HEADER",
+    "type": "HEADER_H1",
+    "texts": ["Referat fra dialogmøte"]
+  },
+  {
+    "type": "PARAGRAPH",
+    "texts": ["Sendt 9. mars 2022, kl. 12.00"]
+  },
+  {
+    "type": "HEADER_H2",
     "texts": ["Artig Trane, 30. april 2021, på Frisk legekontor"]
   },
   {
@@ -17,7 +25,7 @@
     "texts": ["Sykdom og diagnose er underlagt taushetsplikt. Derfor er helsen din bare et tema hvis du selv velger å være åpen om den. Av hensyn til personvernet inneholder referatet uansett ikke slike opplysninger."]
   },
   {
-    "type": "HEADER",
+    "type": "HEADER_H2",
     "texts": ["Dette skjedde i møtet"]
   },
   {
@@ -46,7 +54,7 @@
     "texts": ["Cum assimilatio messis, omnes xiphiases imitari ferox, domesticus danistaes. Hercle, habena gratis. Nunquam acquirere abnoba."]
   },
   {
-    "type": "HEADER",
+    "type": "HEADER_H2",
     "texts": ["Dette informerte NAV om i møtet"]
   },
   {
