@@ -1,5 +1,13 @@
 [
   {
+    "type": "HEADER_H1",
+    "texts": ["Avlysning av dialogmøte"]
+  },
+  {
+    "type": "PARAGRAPH",
+    "texts": ["Sendt 9. mars 2022, kl. 12.00"]
+  },
+  {
   "type": "PARAGRAPH",
   "texts": ["Gjelder Artig Trane, f.nr. 12345678945"]
   },

@@ -70,12 +70,23 @@
     <title>{{ doctitle }}</title>
 </head>
 <body>
-<h1>{{ heading }}</h1>
 {{#each items }}
     {{#if title }}
         <h3>{{ title }}</h3>
     {{/if}}
-    {{#eq type 'HEADER' }}
+    {{#eq type 'HEADER_H1' }}
+        <h1>
+            {{#each texts }}
+                {{ this }}<br/>
+            {{/each}}
+        </h1>
+    {{else eq type 'HEADER_H2' }}
+        <h2>
+            {{#each texts }}
+                {{ this }}<br/>
+            {{/each}}
+        </h2>
+    {{else eq type 'HEADER' }}
         <h2>
             {{#each texts }}
                 {{ this }}<br/>
