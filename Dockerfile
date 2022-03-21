@@ -1,5 +1,5 @@
-FROM navikt/pdfgen:096d823096fb366a6a90dfeae4401d165dd7bbb6
-
+FROM ghcr.io/navikt/pdfgen:1.4.3
+ENV JAVA_OPTS="-Dlogback.configurationFile=logback-remote.xml"
 COPY templates /app/templates
 COPY fonts /app/fonts
 COPY resources /app/resources
