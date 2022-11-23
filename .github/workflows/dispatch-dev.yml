@@ -25,7 +25,7 @@ jobs:
           echo "found_image=$found" >> $GITHUB_ENV
       - name: Checkout code
         if: ${{ !env.found_image }}
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           ref: ${{ github.event.inputs.gitCommit }}
       - name: Build and publish Docker image if not already done
@@ -42,7 +42,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
       - uses: nais/deploy/actions/deploy@v1
         env:
           APIKEY: ${{ secrets.NAIS_DEPLOY_APIKEY }}
