@@ -30,4 +30,6 @@ jobs:
       image: ${{ needs.build.outputs.image }}
       dev-cluster: dev-gcp
       prod-cluster: prod-gcp
+      dev-nais-template: .nais/naiserator-dev-gcp.yaml
+      prod-nais-template: .nais/naiserator-prod-gcp.yaml
     secrets: inherit
