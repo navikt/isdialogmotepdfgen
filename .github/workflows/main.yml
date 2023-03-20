@@ -2,9 +2,6 @@ name: main
 
 on: push
 
-env:
-  IMAGE: docker.pkg.github.com/${{ github.repository }}/isdialogmotepdfgen:${{ github.sha }}
-
 jobs:
   build:
     name: Checkout code and create docker tag
@@ -13,36 +10,19 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
       - name: Build and publish Docker image
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          docker build --tag ${IMAGE} .
-          docker login docker.pkg.github.com -u ${GITHUB_REPOSITORY} -p ${GITHUB_TOKEN}
-          docker push ${IMAGE}
-          echo ${IMAGE}
+        uses: nais/docker-build-push@v0
+        id: docker-build-push
+        with:
+          team: teamsykefravr
+          identity_provider: ${{ secrets.NAIS_WORKLOAD_IDENTITY_PROVIDER }}
+          project_id: ${{ vars.NAIS_MANAGEMENT_PROJECT_ID }}
+          tag: ${{ github.sha }}
 
-  deploy-dev:
-    if: github.ref == 'refs/heads/master'
-    name: Deploy to NAIS dev-gcp
+  nais-deploy:
     needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: nais/deploy/actions/deploy@v1
-        env:
-          APIKEY: ${{ secrets.NAIS_DEPLOY_APIKEY }}
-          CLUSTER: dev-gcp
-          RESOURCE: .nais/naiserator-dev-gcp.yaml
-
-  deploy-prod:
-    if: github.ref == 'refs/heads/master'
-    name: Deploy to NAIS prod-gcp
-    needs: deploy-dev
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: nais/deploy/actions/deploy@v1
-        env:
-          APIKEY: ${{ secrets.NAIS_DEPLOY_APIKEY }}
-          CLUSTER: prod-gcp
-          RESOURCE: .nais/naiserator-prod-gcp.yaml
+    uses: navikt/isworkflows/.github/workflows/deploy-dev-og-prod.yml@master
+    with:
+      image: ${{ needs.build-and-publish.outputs.image }}
+      dev-cluster: dev-gcp
+      prod-cluster: prod-gcp
+    secrets: inherit
