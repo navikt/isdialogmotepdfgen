@@ -13,13 +13,13 @@ spec:
     max: 4
     cpuThresholdPercentage: 70
   liveness:
-    path: /is_alive
+    path: /internal/is_alive
     timeout: 1
     initialDelay: 5
     periodSeconds: 5
     failureThreshold: 30
   readiness:
-    path: /is_alive
+    path: /internal/is_ready
     timeout: 1
     initialDelay: 5
     periodSeconds: 5
@@ -28,15 +28,12 @@ spec:
   prometheus:
     enabled: true
     path: /prometheus
-  istio:
-    enabled: false
   resources:
     limits:
-      cpu: 800m
       memory: 1024Mi
     requests:
-      cpu: 500m
-      memory: 512Mi
+      cpu: 10m
+      memory: 128Mi
   accessPolicy:
     inbound:
       rules:
