@@ -25,6 +25,9 @@ jobs:
 
   nais-deploy:
     needs: build
+    permissions:
+      contents: read
+      id-token: write
     uses: navikt/isworkflows/.github/workflows/deploy-dev-og-prod.yml@master
     with:
       image: ${{ needs.build.outputs.image }}
